@@ -38,11 +38,10 @@ const Layout: React.FC<LayoutProps> = ({ children, activeView, setActiveView, is
         />
         <div 
           onClick={() => setActiveView('sliks')}
-          className="relative -top-6 bg-[#004691] p-4 rounded-full shadow-lg border-4 border-inherit cursor-pointer transform active:scale-95 transition-transform flex items-center justify-center"
-          style={{ borderColor: isDarkMode ? '#1e293b' : 'white' }}
+          className={`relative -top-6 bg-[#004691] p-4 rounded-full shadow-lg border-4 cursor-pointer transform active:scale-95 transition-transform flex items-center justify-center ${isDarkMode ? 'border-[#1e293b]' : 'border-white'}`}
         >
           <QrCode size={30} color="white" />
-          <span className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold ${isDarkMode ? 'text-blue-400' : 'text-[#004691]'}`}>SLIK</span>
+          <span className={`absolute -bottom-6 left-1/2 -translate-x-1/2 text-[10px] font-bold ${activeView === 'sliks' ? 'text-blue-500' : (isDarkMode ? 'text-blue-400' : 'text-[#004691]')}`}>SLIK</span>
         </div>
         <NavItem 
           icon={<MessageSquare size={24} />} 

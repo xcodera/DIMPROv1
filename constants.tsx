@@ -1,5 +1,5 @@
 
-import { Transaction, AccountInfo } from './types';
+import { Transaction } from './types';
 
 export const COLORS = {
   primary: '#004691', // BCA Navy Blue
@@ -10,20 +10,8 @@ export const COLORS = {
   background: '#F8FAFC',
 };
 
-export const MOCK_ACCOUNT: AccountInfo = {
-  name: 'Andika Saputra',
-  jobTitle: 'Manajer Marketing',
-  role: 'Management',
-  avatarUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&h=200&auto=format&fit=crop',
-  accountNumber: '8830129482',
-  balance: 15750000,
-  points: 1250,
-};
-
-// Other profiles available for reference:
-// Syaiful (Advertiser - Staff Ops)
-// Rafika Batari (Marketing InHouse - Marketing)
-
+// MOCK_ACCOUNT is now obsolete as user data is fetched from Supabase.
+// MOCK_TRANSACTIONS remains for the AI Chat Assistant demo.
 export const MOCK_TRANSACTIONS: Transaction[] = [
   { id: '1', title: 'Indomaret Point', amount: 45000, date: '2023-10-25', type: 'debit', category: 'Shopping' },
   { id: '2', title: 'Transfer Masuk - ADI', amount: 2500000, date: '2023-10-24', type: 'credit', category: 'Income' },

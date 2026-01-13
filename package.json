@@ -1,5 +1,5 @@
 {
-  "name": "dup-backup-dimpro-1",
+  "name": "xcodera",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "react": "^19.2.3",
-    "react-dom": "^19.2.3",
-    "@google/genai": "^1.35.0",
-    "lucide-react": "^0.562.0"
+    "@google/genai": "0.2.1",
+    "lucide-react": "0.294.0",
+    "@supabase/supabase-js": "2.39.0",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
